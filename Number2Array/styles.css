@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#nmbr-inputs {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(255, 0, 0, 0.307);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+input[type='number'] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input[type='number']:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+}
+
+p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#confirm {
+  background-color: #28a745;
+}
+
+#confirm:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 480px) {
+  #nmbr-inputs {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  input[type='number'],
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
